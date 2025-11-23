@@ -1,3 +1,15 @@
+@use "heklers" as *;
+
 body {
   padding: 100px;
+
+  p {
+    @include fluid-text(48, 16);
+
+    width: rem(100);
+
+    @include mobile {
+      background-color: red;
+    }
+  }
 }
